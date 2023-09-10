@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Admin Interface</h1>
+    <div id="studentInfo">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter Name">
+        <label for="fatherNameInput">Father's Name:</label>
+        <input type="text" id="fatherNameInput" placeholder="Enter Father's Name">
+        <label for="rollNumberInput">Roll Number:</label>
+        <input type="text" id="rollNumberInput" placeholder="Enter Roll Number">
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="generateIDCard">Generate ID Card</button>
+    </div>
+   
+    <div id="idCard" class="hidden">
+        <button id="saveToFirebase">UPLOAD</button>
+        <!-- Placeholder for generated ID Card UI -->
+        <h2>ID Card</h2>
+        <div id="studentDetails">
+            <!-- Student details will be displayed here -->
+        </div>
+       
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>
